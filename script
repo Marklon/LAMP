@@ -1,0 +1,10 @@
+$ yum -y install httpd
+$ yum -y mariadb-server mariadb 
+
+$ yum -y 
+
+$ yum -y 
+$ yum -y 
+$ yum -y 
+$ yum -y 
+$ yum -y 
