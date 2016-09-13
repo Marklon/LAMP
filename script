@@ -1,10 +1,16 @@
-$ yum -y install httpd
-$ yum -y mariadb-server mariadb 
+#!/bin/bash
+yum -y install httpd
 
-$ yum -y 
+yum -y install mariadb-server mariadb 
 
-$ yum -y 
-$ yum -y 
-$ yum -y 
-$ yum -y 
-$ yum -y 
+yum -y install php php-mysql php-gd php-pear php-mbstring
+
+yum -y install firewalld
+
+firewall-cmd --permanent --add-service http && firewall-cmd --permanent --add-service https
+
+systemctl start firewalld && systemctl enable firewalld
+
+systemctl start httpd && systemctl enable httpd
+
+systemctl start mariadb && systemctl enable mariadb
