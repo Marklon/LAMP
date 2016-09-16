@@ -19,3 +19,5 @@ sudo firewall-cmd --reload
 systemctl start httpd && systemctl enable httpd
 
 systemctl start mariadb && systemctl enable mariadb
+
+exit 0
